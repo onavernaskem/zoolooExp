@@ -1,0 +1,81 @@
+.page2-header {
+  padding: 0;
+}
+.header__back-btn {
+  display: block;
+  position: absolute;
+  top: 16.5px;
+  left: 14px;
+  z-index: 100;
+}
+.header__back-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #909090;
+}
+
+.page2-main {
+  margin-top: 15.5px;
+}
+
+.route {
+  padding: 0 10px 0 50.5px;
+  display: flex;
+}
+.route__list {
+  width: 100%;
+  margin: 0;
+  padding: 2px 16px 2px 5px;
+  background: rgba(144, 144, 144, 0.1);
+  border-radius: 4px;
+}
+.route__item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  list-style: none;
+  font-family: "Suisse Intl";
+  font-size: 0.78rem;
+  line-height: 0.92rem;
+  color: #505050;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 12px;
+    background: url(../../img/rpoint2.svg) 0 0 / contain no-repeat;
+    top: 4px;
+    left: -20px;
+    transform: translateX(-50%);
+  }
+  &:nth-child(1) {
+    &::before {
+      background: url(../../img/rpoint.svg) 0 0 / contain no-repeat;
+    }
+  }
+  &:nth-last-child(1) {
+    &::before {
+      width: 5px;
+      height: 7px;
+      background: url(../../img/rpointlast.svg) 0 0 / contain no-repeat;
+    }
+  }
+}
+
+.footer__comment {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 9px;
+  font-family: "Suisse Intl";
+  font-size: 0.7rem;
+  line-height: 0.85rem;
+  color: #909090;
+	text-decoration: none;
+	svg{
+		padding-left: 3px;
+	}
+}
+
+

@@ -1,0 +1,48 @@
+.page-4-body {
+  .route {
+    padding: 0;
+    justify-content: center;
+  }
+  .page4-header {
+    margin-top: 18px;
+  }
+  .route__specific {
+    font-family: "Suisse Intl";
+    font-size: 0.85rem;
+    line-height: 1rem;
+    color: #909090;
+  }
+  .navigation {
+    margin-top: 15px;
+  }
+  .navigation__time {
+    display: block;
+    font-family: "Suisse Intl";
+    font-size: 0.85rem;
+    line-height: 1rem;
+    padding: 0 46px 0 36px;
+    color: #19303d;
+  }
+  .navigation__transit {
+		position: relative;
+		margin-left: 31px;
+		margin-top: 10px;
+    font-family: "Suisse Intl";
+    font-size: 0.7rem;
+    line-height: 0.85rem;
+		color: #75838b;
+		&::before{
+			position: absolute;
+			content: "";
+			width: 4px;
+			height: 4px;
+			left: -6px;
+			top: 50%;
+			transform: translate(-100%, -50%);
+			background: url(../../img/liststyle.svg) 0 0 / contain no-repeat;
+		}
+  }
+  .navigation__nav-card {
+    margin-top: 10px;
+  }
+}

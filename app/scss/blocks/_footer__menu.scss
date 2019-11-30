@@ -1,0 +1,83 @@
+.footer__menu {
+  display: flex;
+  margin-top: 25px;
+  padding: 5px;
+  align-self: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.share-ways {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100px;
+  height: 31px;
+  padding: 5px 7px 11px 7px;
+  transform: translateX(-50%);
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+  background: url(../../img/shares.svg) 0 0 / contain no-repeat;
+}
+.share-ways--active {
+  display: flex;
+}
+.share-ways__copy-text {
+  padding-left: 8px;
+  display: none;
+  font-family: "Suisse Intl";
+  font-weight: 500;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  color: #ffffff;
+}
+.share-ways--copied {
+  justify-content: flex-start;
+  .share-ways__copy-text {
+    display: block;
+  }
+  .share-ways__copy-btn {
+    path {
+      stroke: #00bba4;
+    }
+  }
+  .share-ways__icon {
+    &:nth-child(n + 2) {
+      display: none;
+    }
+  }
+}
+.share-ways__icon {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  cursor: pointer;
+}
+.footer__link-wrapper {
+  position: relative;
+  margin-right: 37px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (min-width: 960px) {
+    &:nth-child(1) {
+      display: none;
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
+.footer__link {
+  display: block;
+}
+svg {
+  pointer-events: none;
+}

@@ -1,0 +1,59 @@
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  right: 30px;
+  margin: 0;
+  padding: 7px 0 7px 40px;
+  background: #fff;
+  border-radius: 5px;
+}
+.drop-down__item {
+  position: relative;
+  list-style: none;
+  padding: 6px 40px 6px 0;
+  border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+  font-family: "Suisse Intl";
+  font-size: 1rem;
+  line-height: 1.15rem;
+  color: #19303d;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    content: "";
+    left: -17px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background: url(../../img/mappoint.svg) 0 0 / contain no-repeat;
+  }
+}
+.state_2 {
+  .drop-down {
+    display: block;
+    top: calc(100% - 10px);
+    left: 0;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+  }
+  .drop-down__item {
+    &:nth-child(1) {
+      &::before {
+        width: 14px;
+        height: 14px;
+        background: url(../../img/usergeo.svg) 0 0 / contain no-repeat;
+      }
+    }
+  }
+}
+.state_3 {
+  .drop-down {
+    display: block;
+    left: 0;
+    right: 0;
+  }
+  .drop-down__item {
+  }
+}

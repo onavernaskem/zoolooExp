@@ -1,0 +1,41 @@
+.page-html {
+  margin: 0;
+  padding: 0;
+	height: 100%;
+	font-size: 16px;
+}
+
+.page-body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("../fonts/SuisseIntlMedium.eot");
+  src: url("../fonts/SuisseIntlMedium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SuisseIntlMedium.woff2") format("woff2"),
+    url("../fonts/SuisseIntlMedium.woff") format("woff"),
+    url("../fonts/SuisseIntlMedium.ttf") format("truetype"),
+    url("../fonts/SuisseIntlMedium.svg#SuisseIntl-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("../fonts/SuisseIntlRegular.eot");
+  src: url("../fonts/SuisseIntlRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SuisseIntlRegular.woff2") format("woff2"),
+    url("../fonts/SuisseIntlRegular.woff") format("woff"),
+    url("../fonts/SuisseIntlRegular.ttf") format("truetype"),
+    url("../fonts/SuisseIntlRegular.svg#SuisseIntl-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+

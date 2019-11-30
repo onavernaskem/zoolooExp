@@ -1,0 +1,217 @@
+.nav-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 11px 27px 11px 53px;
+  box-shadow: 1px 3px 10px rgba(55, 71, 79, 0.1);
+  &::after {
+    position: absolute;
+    content: "";
+    left: 22px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    background: #000;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 22px;
+    top: 25px;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+    background: #000;
+  }
+}
+.nav-card--train {
+  &::after {
+    background: url(../../img/trainCircle.svg) 0 0 / contain no-repeat;
+  }
+  &::before {
+    background: #7fa180;
+  }
+}
+.nav-card--flight {
+  &::after {
+    background: url(../../img/flightCircle.svg) 0 0 / contain no-repeat;
+  }
+  &::before {
+    background: #76a7cb;
+  }
+}
+.nav-card--ship {
+  &::after {
+    background: url(../../img/shipCircle.svg) 0 0 / contain no-repeat;
+  }
+  &::before {
+    background: #56bbc1;
+  }
+}
+.nav-card--car {
+  &::after {
+    background: url(../../img/carCircle.svg) 0 0 / contain no-repeat; /* Цвета неизвестны, в дизайне нет примера */
+  }
+  &::before {
+    background: #19303d; /* Цвета неизвестны, в дизайне нет примера */
+  }
+}
+.nav-card--dest {
+  &::after {
+    background: url(../../img/destCircle.svg) 0 0 / contain no-repeat;
+  }
+  &::before {
+    background: transparent;
+  }
+}
+.nav-card__chkbx-label {
+  position: absolute;
+  right: 9px;
+}
+.nav-card__chkbx-appearance {
+  position: absolute;
+	display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/dropchek.svg) 0 0 / contain no-repeat;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+	transition: 0.2s all;
+}
+.nav-card__chkbx {
+	position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:checked + .nav-card__chkbx-appearance {
+    transform: rotate(-180deg);
+  }
+  &:focus + .nav-card__chkbx-appearance {
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 2px rgba(255, 157, 65, 0.75);
+  }
+}
+.nav-card__route {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Suisse Intl";
+  font-weight: 500;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  align-items: center;
+  color: #19303d;
+  &::after {
+    position: absolute;
+    content: "";
+    right: -10px;
+    height: 100%;
+    width: 20px;
+    background: linear-gradient(
+      270deg,
+      #ffffff 41.52%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  @media (min-width: 960px) {
+    font-size: 1rem;
+    line-height: 1.15rem;
+  }
+}
+.nav-card__time {
+  display: block;
+  margin-top: 11px;
+  font-family: "Suisse Intl";
+  font-size: 0.85rem;
+  line-height: 1rem;
+  color: #505050;
+}
+.nav-card__numbers {
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  margin-top: 4px;
+	overflow: hidden;
+  &::after {
+    position: absolute;
+    content: "";
+    right: -10px;
+    height: 100%;
+    width: 20px;
+    background: linear-gradient(
+      270deg,
+      #ffffff 41.52%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+.nav-card--open {
+  .nav-card__numbers {
+    flex-wrap: wrap;
+  }
+  .nav-card__number {
+    margin-bottom: 6px;
+  }
+}
+.nav-card__number {
+  display: block;
+  border: 1px solid #909090;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 5px;
+  padding: 1px 3px;
+  font-family: "Suisse Intl";
+  font-size: 0.85rem;
+  line-height: 1rem;
+	color: #909090;
+	transition: 0.3s all;
+}
+.nav-card__info {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-card__cost {
+  font-family: "Suisse Intl";
+  font-size: 10px;
+  line-height: 14px;
+  color: #909090;
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #505050;
+  }
+}
+.nav-card__link {
+  font-family: "Suisse Intl";
+  font-size: 10px;
+  line-height: 14px;
+  color: #909090;
+  a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #505050;
+  }
+}
+.nav-card__btn-srch {
+  border: none;
+  padding: 5px 10px;
+  background: #00bba4;
+  border-radius: 3px;
+  font-family: "Suisse Intl";
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}

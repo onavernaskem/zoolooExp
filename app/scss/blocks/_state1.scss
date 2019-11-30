@@ -1,0 +1,17 @@
+.page-body.state_1 {
+  .search__xtr-btn {
+    display: block;
+  }
+	.search__drag-btn{
+		display: block;
+		right: 48px;
+		background: url(../../img/drag2.svg) 0 0 / contain no-repeat;
+	}
+	.search__checkboxes-wrapper {
+    display: flex;
+  }
+	.search__submit {
+		display: block;
+	}
+
+}

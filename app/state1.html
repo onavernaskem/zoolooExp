@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="page-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Zooloo</title>
+  </head>
+  <body class="page-body state_1">
+    <div class="content-wrapper">
+      <header class="page-header header container">
+        <div class="header__menu menu enu--opened">
+          <!-- add class "menu--opened" -->
+          <button class="header__burger menu__burger">
+            <span class="burger-line burger-line--1"></span>
+            <span class="burger-line burger-line--2"></span>
+            <span class="burger-line burger-line--3"></span>
+          </button>
+          <div class="menu__body">
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__link" href="">билеты</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link" href="">паромы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link" href="">отели</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="menu__description">
+              Онлайн сервис для туристов под ключ, создан для оптимизации
+              маршрута от начальной до конечной точки вашего путешествия в любом
+              уголке мира, проанализирует все возможные варианты передвижения и
+              размещения: авиа, автобусы, поезда, паромы, гостиницы, рассчитает
+              время и стоимость вашей поездки от двери до двери, удобно быстро и
+              понятно.
+            </p>
+            <div class="menu__soc">
+              <a class="menu__link menu__link--soc" href="#">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.656 0.0720215H2.50397C1.20797 0.0720215 0.167969 1.11202 0.167969 2.40802V11.56C0.167969 12.856 1.20797 13.896 2.50397 13.896H6.98397V8.26402H5.51197V6.36002H6.98397C6.98397 6.36002 6.98397 5.11202 6.98397 4.84002C6.98397 4.56802 6.91997 2.69602 9.30397 2.69602C9.62397 2.69602 10.424 2.69602 11.064 2.69602C11.064 3.51202 11.064 4.37602 11.064 4.63202C10.584 4.63202 9.99197 4.63202 9.75197 4.63202C9.51197 4.63202 9.25597 4.88802 9.25597 5.08002C9.25597 5.27202 9.25597 6.34402 9.25597 6.34402C9.25597 6.34402 10.776 6.34402 10.984 6.34402C10.92 7.32002 10.776 8.24802 10.776 8.24802H9.25597V13.88H11.656C12.952 13.88 13.992 12.84 13.992 11.544V2.40802C14.008 1.11202 12.952 0.0720215 11.656 0.0720215Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a class="menu__link menu__link--soc" href="#"
+                ><svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1364 0H3.86341C1.73313 0 0 1.73321 0 3.86349V10.1365C0 12.2669 1.73313 14 3.86341 14H10.1364C12.2669 14 14 12.2668 14 10.1365V3.86349C14.0001 1.73321 12.2669 0 10.1364 0ZM12.7579 10.1365C12.7579 11.582 11.582 12.7579 10.1365 12.7579H3.86341C2.41805 12.7579 1.24215 11.582 1.24215 10.1365V3.86349C1.24215 2.41813 2.41805 1.24215 3.86341 1.24215H10.1364C11.5819 1.24215 12.7579 2.41813 12.7579 3.86349V10.1365H12.7579Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.00002 3.39258C5.01085 3.39258 3.39258 5.01085 3.39258 7.00002C3.39258 8.98912 5.01085 10.6073 7.00002 10.6073C8.9892 10.6073 10.6075 8.98912 10.6075 7.00002C10.6075 5.01085 8.9892 3.39258 7.00002 3.39258ZM7.00002 9.36507C5.69585 9.36507 4.63473 8.30411 4.63473 6.99994C4.63473 5.69569 5.69577 4.63464 7.00002 4.63464C8.30428 4.63464 9.36532 5.69569 9.36532 6.99994C9.36532 8.30411 8.3042 9.36507 7.00002 9.36507Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M10.7587 2.3396C10.5194 2.3396 10.2843 2.43649 10.1153 2.60625C9.94541 2.77518 9.84778 3.01036 9.84778 3.25051C9.84778 3.48991 9.94549 3.72501 10.1153 3.89477C10.2842 4.0637 10.5194 4.16142 10.7587 4.16142C10.9988 4.16142 11.2332 4.0637 11.4029 3.89477C11.5727 3.72501 11.6696 3.48983 11.6696 3.25051C11.6696 3.01036 11.5727 2.77518 11.4029 2.60625C11.234 2.43649 10.9988 2.3396 10.7587 2.3396Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="menu__registry">
+              <span class="menu__registry-text">Все права защищены</span>
+              <span class="menu__registry-text">Zooloo® 2019</span>
+            </div>
+          </div>
+        </div>
+        <div class="header__logo logo">
+          <a class="logo__link">
+            <img
+              src="./img/Zooloo.png"
+              alt="Zooloo-logo"
+              class="logo__img"
+              width="96"
+              height="23"
+            />
+          </a>
+        </div>
+      </header>
+      <main class="page-main container">
+        <section class="search">
+          <p class="search__slogan">
+            оптимизирует маршрут<br />
+            вашего путешествия<br />
+            в любой точке мира
+          </p>
+          <form action="" class="search__form">
+            <a href="#" class="search__back-btn"
+              ><svg
+                class="search__back-icon"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 9H3M9 1L1 9L9 17"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <div class="search__inputs">
+              <div class="search__input-n-drop">
+                <div class="search__dest search__input-wrapper">
+                  <input class="search__input" type="text" placeholder="куда" />
+                  <button class="search__xtr-btn"></button>
+                  <button class="search__drag-btn"></button>
+                </div>
+              </div>
+              <div class="search__input-n-drop">
+                <div class="search__dest search__input-wrapper">
+                  <input class="search__input" type="text" placeholder="куда" />
+                  <button class="search__add search__xtr-btn"></button>
+                  <button class="search__drag-btn"></button>
+                </div>
+              </div>
+              <div class="search__input-n-drop">
+                <div class="search__origin search__input-wrapper">
+                  <input
+                    class="search__input"
+                    type="text"
+                    placeholder="откуда"
+                  />
+                  <button class="search__xtr-btn"></button>
+                  <button class="search__drag-btn"></button>
+                </div>
+                <ul class="drop-down">
+                  <li class="drop-down__item">Lorem, ipsum.</li>
+                  <li class="drop-down__item">Itaque, debitis!</li>
+                  <li class="drop-down__item">Inventore, ex!</li>
+                </ul>
+              </div>
+            </div>
+            <div class="search__checkboxes-wrapper">
+              <label class="search__label">
+                <input
+                  class="search__checkbox"
+                  type="checkbox"
+                  checked
+                  name=""
+                  id=""
+                />
+                <span
+                  class="search__input-appearance search__input-appearance--all"
+                  >все</span
+                >
+              </label>
+              <label class="search__label">
+                <input class="search__checkbox" type="checkbox" name="" id="" />
+                <span class="search__input-appearance"
+                  ><svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.7928 2.16992C12.9893 1.6797 12.891 1.18948 12.6945 0.89535C12.3996 0.601218 12.0064 0.601218 11.4167 0.797306C10.827 0.993394 10.2373 1.48361 9.84411 1.87579L8.46808 3.24841L2.86566 1.87579C2.76737 1.87579 2.66909 1.87579 2.5708 1.97384L1.48963 3.05232C1.48963 3.15036 1.48963 3.15037 1.48963 3.24841C1.48963 3.34645 1.58792 3.4445 1.58792 3.4445L5.91259 5.79756L3.84854 8.15062L2.07936 7.56235C2.07936 7.56235 2.07936 7.56235 1.98107 7.56235C1.88278 7.56235 1.88278 7.56235 1.78449 7.66039L0.99819 8.44475C0.899902 8.54279 0.899902 8.54279 0.899902 8.64084C0.899902 8.73888 0.99819 8.83692 0.99819 8.83692L3.16053 10.4056L4.73313 12.5626C4.83142 12.6606 4.83142 12.6606 4.92971 12.6606C5.028 12.6606 5.028 12.6606 5.12629 12.5626L6.01088 11.7782C6.10917 11.6802 6.10917 11.5822 6.10917 11.4841L5.51944 9.71932L7.87835 7.66039L10.2373 11.8763C10.2373 11.9743 10.3356 11.9743 10.4338 11.9743C10.4338 11.9743 10.4338 11.9743 10.5321 11.9743C10.6304 11.9743 10.6304 11.9743 10.7287 11.8763L11.8099 11.0919C11.9082 10.9939 11.9082 10.8959 11.9082 10.7978L10.5321 4.91516L11.9082 3.54254C12.1047 3.34645 12.5962 2.75819 12.7928 2.16992Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <label class="search__label">
+                <input class="search__checkbox" type="checkbox" name="" id="" />
+                <span class="search__input-appearance"
+                  ><svg
+                    width="13"
+                    height="11"
+                    viewBox="0 0 13 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.9356 6H0L1.40419 10.3636C1.49195 10.7273 1.843 11 2.19405 11H12.1111C12.6377 11 13.0765 10.5455 12.9888 10L12.7255 6.90909C12.7255 6.45455 12.3744 6 11.9356 6Z"
+                      fill="white"
+                    />
+                    <path d="M6 3H10V0H7.02326L6 3Z" fill="white" />
+                    <path
+                      d="M3.7749 3H11.504L11.4142 2H4.1344L3.7749 3Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M3.14551 5H11.6835L11.5936 4H3.41513L3.14551 5Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <label class="search__label">
+                <input class="search__checkbox" type="checkbox" name="" id="" />
+                <span class="search__input-appearance"
+                  ><svg
+                    width="10"
+                    height="12"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 0C2.46771 0 0 0.293233 0 2.34586V7.91729C0 9.04917 0.899479 9.96992 2.00521 9.96992L1.14583 11.7068V12H8.85417V11.7068L7.99479 9.96992C9.10052 9.96992 10 9.04917 10 7.91729V2.34586C10 0.293233 7.53229 0 5 0ZM2.00521 8.79699C1.52969 8.79699 1.14583 8.40406 1.14583 7.91729C1.14583 7.43053 1.52969 7.03759 2.00521 7.03759C2.48073 7.03759 2.86458 7.43053 2.86458 7.91729C2.86458 8.40406 2.48073 8.79699 2.00521 8.79699ZM4.58333 5.2782H1.14583V2.34586H4.58333V5.2782ZM7.99479 8.79699C7.51927 8.79699 7.13542 8.40406 7.13542 7.91729C7.13542 7.43053 7.51927 7.03759 7.99479 7.03759C8.47031 7.03759 8.85417 7.43053 8.85417 7.91729C8.85417 8.40406 8.47031 8.79699 7.99479 8.79699ZM8.85417 5.2782H5.41667V2.34586H8.85417V5.2782Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </label>
+              <label class="search__label">
+                <input class="search__checkbox" type="checkbox" name="" id="" />
+                <span class="search__input-appearance"
+                  ><svg
+                    width="12"
+                    height="11"
+                    viewBox="0 0 12 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.6133 0.694619C10.48 0.288994 10.1067 0.000244141 9.66667 0.000244141H2.33333C1.89333 0.000244141 1.52667 0.288994 1.38667 0.694619L0 4.81274V10.3127C0 10.6909 0.3 11.0002 0.666667 11.0002H1.33333C1.7 11.0002 2 10.6909 2 10.3127V9.62524H10V10.3127C10 10.6909 10.3 11.0002 10.6667 11.0002H11.3333C11.7 11.0002 12 10.6909 12 10.3127V4.81274L10.6133 0.694619ZM2.33333 7.56274C1.78 7.56274 1.33333 7.10212 1.33333 6.53149C1.33333 5.96087 1.78 5.50024 2.33333 5.50024C2.88667 5.50024 3.33333 5.96087 3.33333 6.53149C3.33333 7.10212 2.88667 7.56274 2.33333 7.56274ZM9.66667 7.56274C9.11333 7.56274 8.66667 7.10212 8.66667 6.53149C8.66667 5.96087 9.11333 5.50024 9.66667 5.50024C10.22 5.50024 10.6667 5.96087 10.6667 6.53149C10.6667 7.10212 10.22 7.56274 9.66667 7.56274ZM1.33333 4.12524L2.33333 1.03149H9.66667L10.6667 4.12524H1.33333Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="search__submit-wrapper">
+              <button class="search__submit" type="submit">Найти</button>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer class="page-footer container">
+        <div class="ad">Advertisment</div>
+      </footer>
+    </div>
+    <div class="map">
+      <img
+        class="img-responsive"
+        src="./img/map.png"
+        alt=""
+        width="auto"
+        height="auto"
+      />
+    </div>
+    <script src="js/common.js"></script>
+  </body>
+</html>
